@@ -21,7 +21,7 @@ from django.urls import path, include
 from control_estudios.views import *
 
 urlpatterns = [
-    path('',inicio),
+    path('AppCoder/',inicio, name="inicio"),
     path('admin/', admin.site.urls),
     path('AppCoder/', include('control_estudios.urls')),
     path('saludo/', saludar),
