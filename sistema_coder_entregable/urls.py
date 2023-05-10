@@ -22,7 +22,7 @@ from control_estudios.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('estudios/', include('control_estudios.urls')),
+    path('AppCoder/', include('control_estudios.urls')),
     path('saludo/', saludar),
     path('saludar/', saludar_con_fecha),
     path('saludo-html/', saludar_con_html),
