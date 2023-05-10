@@ -17,13 +17,10 @@
 from sistema_coder_entregable.views import *
 from django.contrib import admin
 
-from django.urls import path, include
+from django.urls import path
 from control_estudios.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('estudios/', include('control_estudios.urls')),
-    path('saludo/', saludar),
-    path('saludar/', saludar_con_fecha),
-    path('saludo-html/', saludar_con_html),
+    path('estudiantes/', listar_estudiantes),
+    path('cursos/', listar_cursos),
 ]
