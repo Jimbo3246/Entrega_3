@@ -24,10 +24,10 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="btn btn-primary" href="{% url 'inicio' %}">Inicio</a>
-                <a class="navbar-brand" href="#!">Profesores</a>
+                <a class="navbar-brand" href="{% url 'lista_profesores' %}">Profesores</a>
                 <a class="navbar-brand" href="{% url 'lista_cursos' %}">Cursos</a>
                 <a class="navbar-brand" href="{% url 'lista_estudiantes' %}">Estudiantes</a>
-                <a class="navbar-brand" href="#!">Entregables</a>               
+                <a class="navbar-brand" href="{% url 'lista_entregables' %}">Entregables</a>               
             </div>
         </nav>
         <header class="masthead" :: before>

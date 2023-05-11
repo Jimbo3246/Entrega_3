@@ -23,5 +23,11 @@ from control_estudios.views import *
 urlpatterns = [
     path('estudiantes/', listar_estudiantes, name="lista_estudiantes"),
     path('cursos/', listar_cursos, name="lista_cursos"),
-
+    path('profesores/', listar_profesores, name="lista_profesores"),
+    path('entregables/', listar_entregables, name="lista_entregables"),
+    path('crear-curso/', crear_curso, name="crear_curso"),
+    path('crear-estudiante/', crear_estudiante, name="crear_estudiante"),
+    path('crear-profesor/', crear_profesor, name="crear_profesor"),
+    path('crear-entregable/', crear_entregable, name="crear_entregable"),
+    path('buscar-cursos/', buscar_cursos, name="buscar_cursos"),
 ]

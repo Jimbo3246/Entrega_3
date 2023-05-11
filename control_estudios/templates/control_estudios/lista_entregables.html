@@ -1,0 +1,15 @@
+{% extends "control_estudios/base.html" %}
+
+{% block contenido %}
+<section>
+    <div>
+      <h1>Lista de entregables</h1>
+      <a href="{% url 'crear_entregable' %}">Crear_entregable</a>
+      <ul>
+      {% for entregable in entregables %}
+       <li>{{ entregable.nombre }}, {{ entregable.fecha_entrega }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+</section>
+{% endblock contenido %}
